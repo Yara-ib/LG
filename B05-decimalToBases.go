@@ -19,7 +19,7 @@ func convDecimalToBase(num, base int) string {
 	var str string
 	for num > 0 {
 		// Till base 16 only >>  const charset = "0123456789ABCDEF"
-		// For larger Bases | Add Extra Chars
+		// For larger Bases | Adding Extra Chars
 		const charset = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 		remainder := num % base
 		str = string(charset[remainder]) + str
